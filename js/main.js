@@ -33,21 +33,25 @@ if(document.querySelector('.banner__slider')) {
     $('.banner__slider').slick({
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true
     });
 }
 if(document.querySelector('.information__banner')) {
     $('.information__banner').slick({
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
     });
 }
 if(document.querySelector('.reviews__slick')) {
     $('.reviews__slick').slick({
         infinite: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: false
     });
 };
 
