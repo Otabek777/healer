@@ -122,3 +122,9 @@ if(document.querySelector('.select')) {
         });
     });
 }
+
+if(document.querySelector('.select_btn')) {
+    $( ".select_btn" ).click(function() {
+        $(this).toggleClass('active');
+    });
+}
