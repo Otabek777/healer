@@ -4273,7 +4273,7 @@ ul, ol {
   font-size: 14px;
   line-height: 24px;
 }
-.contacts .tabs__content .form select {
+.contacts .tabs__content .form .select {
   width: 100%;
   height: 50px;
   background: #FFFFFF;
@@ -4285,7 +4285,14 @@ ul, ol {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  padding: 0 25px;
+  color: #808080;
+}
+.contacts .tabs__content .form .select .new-select {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
   color: #808080;
 }
 .contacts .tabs__content .form textarea {
@@ -5649,6 +5656,7 @@ ul, ol {
 
 .modal.active {
   display: block;
+  overflow-y: auto;
 }
 
 .modal__block {
@@ -5697,6 +5705,37 @@ ul, ol {
   line-height: 24px;
   padding: 0 25px;
 }
+.modal__block .select {
+  width: 100%;
+  height: 50px;
+  background: #FFFFFF;
+  border: 2px solid #EFEFEF;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.modal__block .new-select {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+  padding: 0 25px;
+}
+.modal__block .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.modal__block .box .select {
+  width: 265px;
+}
+.modal__block .box .input {
+  width: 265px;
+}
 .modal__block .textarea {
   margin-bottom: 25px;
 }
@@ -5716,6 +5755,20 @@ ul, ol {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+}
+.modal__block .phone {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 25px;
+  padding: 0 24px;
+}
+.modal__block .phone a {
+  color: #83C550;
 }
 .modal__block .bottom {
   display: -webkit-box;
@@ -7852,6 +7905,7 @@ ul, ol {
   .specialists__search {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 25px;
   }
 
   .specialists__search .select {
@@ -7895,5 +7949,531 @@ ul, ol {
 
   .contacts {
     display: block;
+    padding-bottom: 50px;
+  }
+
+  .contacts__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contacts__left {
+    width: 100%;
+  }
+  .contacts__left .h3 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__left .phone {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 250px;
+    width: 100%;
+  }
+
+  .contacts__left .block {
+    margin-bottom: 25px;
+  }
+
+  .contacts__left .week {
+    margin-right: 46px;
+  }
+
+  .contacts__left .week h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__left .week_right h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__left .week_right {
+    width: 85px;
+  }
+
+  .contacts__left .week_right p, .contacts__left .week p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .contacts__left .address {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__left .code {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__right {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .contacts__right .wrap {
+    padding: 25px;
+  }
+
+  .contacts__right .h3 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__right .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 8px;
+  }
+  .contacts__right .box .left {
+    width: 100%;
+    margin-bottom: 4px;
+    margin-right: 0;
+  }
+  .contacts__right .box .left p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contacts__right .box .right p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__right .download {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contacts__box {
+    margin-bottom: 50px;
+  }
+
+  .tabs__caption li {
+    width: 100%;
+    height: 45px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .contacts .tabs__content .text {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  .contacts .tabs__content .search {
+    height: 45px;
+    margin-bottom: 50px;
+  }
+
+  .contacts .tabs__content .search .left {
+    min-width: 60px;
+    width: 60px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .contacts .tabs__content .search .main_btn {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    overflow: hidden;
+    color: #FFB400;
+    position: relative;
+  }
+
+  .contacts .tabs__content .search .main_btn::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(../img/search.svg) no-repeat center/cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .tabs__content {
+    padding: 20px 0;
+  }
+
+  .contacts .tabs__content .form {
+    padding: 25px 20px;
+  }
+
+  .contacts .tabs__content .form .left {
+    width: 100%;
+  }
+
+  .contacts .tabs__content .form .right {
+    width: 100%;
+  }
+
+  .contacts .tabs__content .form .select {
+    height: 45px;
+    margin-bottom: 10px;
+  }
+  .contacts .tabs__content .form .select .new-select {
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .contacts .tabs__content .form textarea {
+    min-height: 120px;
+    max-height: 120px;
+    height: 120px;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .contacts .tabs__content .form .input {
+    height: 45px;
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+
+  .contacts .tabs__content .form .bottom {
+    margin-top: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contacts .tabs__content .form .bottom p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+
+  .contacts .tabs__content .form .bottom .main_btn {
+    width: 100%;
+  }
+
+  .contacts .tabs__content .form .persone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .contacts .tabs__content .form .persone .img {
+    margin-bottom: 16px;
+  }
+  .contacts .tabs__content .form .persone .name {
+    width: 100%;
+  }
+  .contacts .tabs__content .form .persone .name p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .price_list {
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .accordion__btn span {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .accordion__btn span::before {
+    height: 13px;
+  }
+
+  .accordion__btn span::after {
+    width: 13px;
+  }
+
+  .price_list__accordion {
+    margin-bottom: 12px;
+  }
+
+  .accordion__btn {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .accordion__block .table .top {
+    padding: 0 10px;
+    height: 44px;
+  }
+  .accordion__block .table .top .code {
+    width: 30px;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .accordion__block .table .top .code::after {
+    content: ",";
+  }
+  .accordion__block .table .top .name {
+    width: 150px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .accordion__block .table .top .price {
+    width: 60px;
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .accordion__block .table .block {
+    height: auto;
+    padding: 12px 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+  }
+  .accordion__block .table .block .code {
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 0;
+  }
+  .accordion__block .table .block .name {
+    width: 210px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .accordion__block .table .block .price {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 14px;
+    line-height: 20px;
+    width: calc(100% - 210px);
+  }
+
+  .accordion__block .table .block .price .btn {
+    margin-right: 0;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+  }
+
+  .accordion__block .wrap h6 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .accordion__btn2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .accordion__block .table .block .name a {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .specialists_page_post {
+    display: block;
+    padding-bottom: 50px;
+  }
+
+  .specialists_page_post__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .specialists_page_post__box .img {
+    width: 290px;
+    height: 340px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .specialists_page_post__box .img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .specialists_page_post__box .content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .specialists_page_post__box .content .name {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .specialists_page_post__box .content ul {
+    margin-bottom: 5px;
+  }
+
+  .specialists_page_post__box .content ul li {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .specialists_page_post__box .content ul li::before {
+    width: 7px;
+    height: 7px;
+  }
+
+  .specialists_page_post__box .content .open_read_more {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .read_more_block .h4 {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .read_more_block p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+
+  .read_more_block .wrap {
+    margin-bottom: 0;
+  }
+
+  .read_more_block.open {
+    margin-bottom: 40px;
+  }
+
+  .specialists_page_post .main_btn {
+    width: 100%;
+  }
+
+  .reviews_page__wrap.silver {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  .reviews_page__wrap.silver .h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .modal {
+    padding-top: 139px;
+  }
+
+  .modal__close {
+    right: 0;
+  }
+
+  .modal__block {
+    padding: 30px 20px;
+  }
+
+  .modal__block .h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .modal__block .p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+
+  .modal__block .input {
+    height: 45px;
+  }
+  .modal__block .input input {
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal__block .textarea {
+    margin-bottom: 10px;
+  }
+  .modal__block .textarea textarea {
+    min-height: 120px;
+    height: 120px;
+    max-height: 120px;
+    padding: 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal__block .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .modal__block .bottom p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal__block .input_btn {
+    width: 100%;
+    margin-left: 0;
+    height: 45px;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 15px;
+  }
+
+  .modal__block .select {
+    height: 45px;
+  }
+
+  .modal__block .new-select {
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal__block .new-select:after {
+    top: 9px;
+  }
+
+  .modal__block .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__block .box .input {
+    width: 100%;
+  }
+  .modal__block .box .select {
+    width: 100%;
+  }
+
+  .modal__block .phone {
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 16px;
   }
 }
