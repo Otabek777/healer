@@ -142,3 +142,13 @@ if(document.querySelector('#show-week')) {
         $('.schedule__week').removeClass('show');
     });
 }
+if(document.querySelector('.modal-btn-review-open')) {
+    $(".modal-btn-review-open").click(function() {
+        $('#modal-review').addClass('active');
+    });
+};
+if(document.querySelector('.modal-btn-entry-open')) {
+    $(".modal-btn-entry-open").click(function() {
+        $('#modal-entry').addClass('active');
+    });
+};
