@@ -145,10 +145,18 @@ if(document.querySelector('#show-week')) {
 if(document.querySelector('.modal-btn-review-open')) {
     $(".modal-btn-review-open").click(function() {
         $('#modal-review').addClass('active');
+        $('body').addClass('hidden');
     });
 };
 if(document.querySelector('.modal-btn-entry-open')) {
     $(".modal-btn-entry-open").click(function() {
         $('#modal-entry').addClass('active');
+        $('body').addClass('hidden');
+    });
+};
+if(document.querySelector('.modal-btn-entry-open2')) {
+    $(".modal-btn-entry-open2").click(function() {
+        $('#modal-entry2').addClass('active');
+        $('body').addClass('hidden');
     });
 };
