@@ -5726,6 +5726,9 @@ ul, ol {
   margin-bottom: 25px;
   padding: 0 24px;
 }
+.modal__block .phone br {
+  display: none;
+}
 .modal__block .phone a {
   color: #83C550;
 }
@@ -8879,6 +8882,14 @@ ul, ol {
 
   .modal__block .bottom p {
     width: 100%;
+  }
+
+  .modal__block .phone br {
+    display: block;
+  }
+
+  .modal__block .phone a {
+    display: inline-block;
   }
 }
 @media screen and (max-width: 330px) {

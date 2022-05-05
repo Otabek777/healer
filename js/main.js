@@ -131,15 +131,15 @@ if(document.querySelector('.select_btn')) {
 if(document.querySelector('#show-week')) {
     $("#show-week").click(function() {
         $(this).addClass('active');
-        $('.schedule__week').addClass('show');
+        $('.schedule__week').removeClass('show');
         $('#show-month').removeClass('active');
-        $('.schedule__time').removeClass('show');
+        $('.schedule__time').addClass('show');
     });
     $("#show-month").click(function() {
         $(this).addClass('active');
-        $('.schedule__time').addClass('show');
+        $('.schedule__time').removeClass('show');
         $('#show-week').removeClass('active');
-        $('.schedule__week').removeClass('show');
+        $('.schedule__week').addClass('show');
     });
 }
 if(document.querySelector('.modal-btn-review-open')) {
