@@ -8853,6 +8853,12 @@ ul, ol {
     -webkit-transform: translateX(-33px);
             transform: translateX(-33px);
   }
+
+  .nof_found .title_h2 {
+    max-width: 240px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 330px) {
   .articles__block .img img {
