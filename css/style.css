@@ -2299,6 +2299,7 @@ ul, ol {
   position: relative;
   overflow: hidden;
   padding: 50px;
+  background: url(img/banner-3.png) no-repeat center/cover;
 }
 .banner_3 .title {
   display: inline-block;
@@ -5058,6 +5059,7 @@ ul, ol {
 }
 
 .schedule__time {
+  display: none;
   padding-bottom: 50px;
   position: relative;
 }
@@ -5301,7 +5303,12 @@ ul, ol {
   margin-bottom: 0;
 }
 
+.schedule__time.show {
+  display: block;
+}
+
 .schedule__week {
+  display: none;
   padding-bottom: 40px;
 }
 .schedule__week .top {
@@ -5482,6 +5489,10 @@ ul, ol {
 }
 .schedule__week .block:nth-child(7n) {
   margin-right: 0;
+}
+
+.schedule__week.show {
+  display: block;
 }
 
 .schedule__filter {
@@ -5817,6 +5828,7 @@ ul, ol {
   position: absolute;
   top: 55px;
   left: 0;
+  z-index: 9;
   background: #FFFFFF;
   border: 2px solid #EFEFEF;
   cursor: pointer;
@@ -6616,9 +6628,9 @@ ul, ol {
   }
 
   .specialists__box {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .specialists__block {
@@ -6629,7 +6641,6 @@ ul, ol {
     width: 140px;
     height: 220px;
     margin-bottom: 20px;
-    margin-right: 10px;
   }
 
   .specialists__person .content {
@@ -6933,7 +6944,7 @@ ul, ol {
   .reviews .slick-next {
     width: 30px;
     height: 30px;
-    right: 115px;
+    right: 96px;
     top: auto;
     bottom: -60px;
   }
@@ -6941,7 +6952,7 @@ ul, ol {
   .reviews .slick-prev {
     width: 30px;
     height: 30px;
-    left: 115px;
+    left: 96px;
     top: auto;
     bottom: -60px;
   }
@@ -7081,6 +7092,10 @@ ul, ol {
     display: block;
   }
 
+  .about_clinic__items .li {
+    margin-right: 0;
+  }
+
   .banner_2 {
     height: 265px;
     background: none !important;
@@ -7112,7 +7127,7 @@ ul, ol {
     left: 0;
     z-index: 2;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 18px;
     text-align: center;
   }
   .banner_2 .btn {
@@ -8791,5 +8806,57 @@ ul, ol {
     width: 100% !important;
     margin-bottom: 10px;
     margin-right: 0;
+  }
+
+  .banner_3 {
+    background: url(../img/banner3-mobile.png) no-repeat center/cover;
+  }
+
+  .contacts__right .box .right {
+    width: 100%;
+  }
+
+  .table_price .top {
+    height: 44px;
+    padding: 0 10px;
+  }
+
+  .table_price .top .code {
+    font-size: 14px;
+    line-height: 20px;
+    width: 35px;
+    margin-right: 0;
+  }
+
+  .table_price .top .code::after {
+    content: ",";
+  }
+
+  .table_price .top .name {
+    width: auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .table_price .top .price {
+    width: 70px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .articles_post .table .top .price {
+    width: 70px;
+  }
+
+  .articles_post .table .top .name span {
+    display: block;
+    -webkit-transform: translateX(-33px);
+            transform: translateX(-33px);
+  }
+}
+@media screen and (max-width: 330px) {
+  .articles__block .img img {
+    width: auto;
+    height: 100%;
   }
 }

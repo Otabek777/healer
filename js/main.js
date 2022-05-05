@@ -124,7 +124,21 @@ if(document.querySelector('.select')) {
 }
 
 if(document.querySelector('.select_btn')) {
-    $( ".select_btn" ).click(function() {
+    $(".select_btn").click(function() {
         $(this).toggleClass('active');
+    });
+};
+if(document.querySelector('#show-week')) {
+    $("#show-week").click(function() {
+        $(this).addClass('active');
+        $('.schedule__week').addClass('show');
+        $('#show-month').removeClass('active');
+        $('.schedule__time').removeClass('show');
+    });
+    $("#show-month").click(function() {
+        $(this).addClass('active');
+        $('.schedule__time').addClass('show');
+        $('#show-week').removeClass('active');
+        $('.schedule__week').removeClass('show');
     });
 }
