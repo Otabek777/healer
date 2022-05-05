@@ -3039,6 +3039,11 @@ ul, ol {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #333333;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.events__block .title:hover {
+  color: #1D6C28;
 }
 .events__block .link {
   font-family: "Roboto", sans-serif;
@@ -5833,7 +5838,6 @@ ul, ol {
   border: 2px solid #EFEFEF;
   cursor: pointer;
   width: 100%;
-  z-index: 2;
   background: #fff;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -8858,6 +8862,23 @@ ul, ol {
     max-width: 240px;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+
+  .specialists_page .tab_programs {
+    width: 100%;
+  }
+
+  .specialists_page .tab_programs .img {
+    width: 100%;
+    height: 265px;
+  }
+
+  .specialists_page .tab_programs .content {
+    width: 100%;
+  }
+
+  .modal__block .bottom p {
+    width: 100%;
   }
 }
 @media screen and (max-width: 330px) {
