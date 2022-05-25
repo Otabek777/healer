@@ -4007,6 +4007,7 @@ ul, ol {
   text-transform: uppercase;
   color: #333333;
   margin-bottom: 40px;
+  padding-top: 10px;
 }
 .articles_post__aside .item {
   display: block;
@@ -9210,6 +9211,10 @@ ul, ol {
 
   .modal__block .phone a {
     display: inline-block;
+  }
+
+  .articles_post__aside .h3 {
+    padding-top: 0;
   }
 }
 @media screen and (max-width: 330px) {
