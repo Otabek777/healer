@@ -192,12 +192,8 @@ if(document.querySelector('.modal-btn-entry-open2')) {
     });
 };
 if(document.querySelector('.points')) {
-    $(".points").click(function() {
-        $(".points").removeClass('active');
-        var thisPoints = $(this);
-        setTimeout(function() {
-            thisPoints.addClass('active');
-        }, 01);
+    $(".points").hover(function() {
+        $(this).addClass('active');
     });
     $(".points__block .close").click(function() {
         $(".points").removeClass('active');
